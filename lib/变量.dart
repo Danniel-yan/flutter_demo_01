@@ -25,4 +25,6 @@ void main(){
   // const p = l; // const不可以用final常量赋值，因为时间节点不一样 final是运行时才被赋值
   final p = o; // final可以用const赋值
 
+  int q = 1;
+
 }
