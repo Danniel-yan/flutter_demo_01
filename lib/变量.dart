@@ -28,4 +28,30 @@ void main(){
   int q = 1;
   int r = 0xffffffffffffffff;
 
+  bool b = false;
+
+  /**
+   * List数组
+   */
+  List<String> list3 = [];
+
+
+  List<int> list4 = [1,2,3];
+  int listA = list4[0];
+
+
+  /**
+   * iter 快捷键生成
+   */
+  for (var o in list4) {
+
+  }
+
+  /**
+   * itar 快捷键生成
+   */
+  for (var j = 0; j < list4.length; ++j) {
+    var o = list4[j];
+
+  }
 }
