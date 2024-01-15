@@ -54,4 +54,26 @@ void main(){
     var o = list4[j];
 
   }
+
+  /**
+   * list对象 const修饰不可变
+   */
+  List<int> list5 = const[1,2,3];
+  // list5.add(3);  //不对的 const是不可变 修饰谁 谁不可变
+  list5 = [4,5,6]; // 可以
+
+  const List<int> list6 = [1,2,3];
+  // list6 = list5; // 不可以 修饰谁 谁不可变
+  // list6.add(4); // 不可以
+
+  /**
+   * 映射集合map
+   */
+  Map<int, int> map = {1:1, 2:2, 3:3};
+  print( map[1]);
+  map[1] = 100;
+  var map1 = const{1:2, 2:3};
+  // 添加元素
+  map[3] = 100;
+  print(map);
 }
