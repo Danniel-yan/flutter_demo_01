@@ -26,5 +26,6 @@ void main(){
   final p = o; // final可以用const赋值
 
   int q = 1;
+  int r = 0xffffffffffffffff;
 
 }
