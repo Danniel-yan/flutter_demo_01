@@ -80,24 +80,35 @@ void main(){
 
   /**
    * Runs:特殊字符表示类 （Unicode 32）
+   * 可能永远都不会用到
    */
 
   var clapping = '\u{1f44f}'; ///5个16进制 需要使用{}
   print(clapping);//👏
-//获得 16位代码单元
+  //获得 16位代码单元
   print(clapping.codeUnits); //[55357, 56399]
-//获得unicode代码
+  //获得unicode代码
   print(clapping.runes.toList()); //[128079]
 
-//fromCharCode 根据字符码创建字符串
+  //fromCharCode 根据字符码创建字符串
   print( String.fromCharCode(128079));
   print( String.fromCharCodes(clapping.runes));
   print( String.fromCharCodes([55357, 56399]));
   print( String.fromCharCode(0x1f44f));
 
-  Runes input = new Runes(
+  Runes input = Runes(
       '\u2665  \u{1f605}  \u{1f60e}  \u{1f47b}  \u{1f596}  \u{1f44d}');
   print(String.fromCharCodes(input));
 
-
+  /**
+   * Symbols标识符号
+   * 基本不会用到
+   */
+  var a = #sadsad;
+  switch(a){
+    case #A:
+      break;
+    case #sadsad:
+      break;
+  }
 }
