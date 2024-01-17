@@ -56,3 +56,11 @@ class Button{
     listener.click();
   }
 }
+
+//dart中可以使用回调方法
+typedef void onClick();
+class Button1{
+  void setOnClickListenner(onClick listener){
+    listener();
+  }
+}
