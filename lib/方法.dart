@@ -27,6 +27,7 @@ void fun3(void fun(int i, int j)){
 void main(){
   // 方法可以作为对象 可以赋值
   Function f = fun;
+  //参数为匿名方法或lambda表达式或close闭包
   f((int i, int j, String str){
     print('输出了1');
     return "1";
