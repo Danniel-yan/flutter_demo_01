@@ -34,26 +34,30 @@ void main(){
   print(p3.hashCode == p4.hashCode); // false 表示非一个对象
 
 
-  print(Manager.get());
+  print(Manager.getInstance());
 
 }
 
 class Manager{
+  static Manager? _instance;
+
   // 工厂构造方法 必须返回一个实例对象 dart最常用
-  factory Manager.get(){
+  factory Manager.getInstance(){
 
-    return Children();
+    _instance ??= Manager._newInstance();
+    return _instance!!;
   }
 
-  // 不需要必须返回一个实例对象
-  static Manager get2(){
+  // // 不需要必须返回一个实例对象
+  // static Manager get2(){
+  //
+  //   return Children();
+  // }
 
-    return Children();
-  }
-
-  Manager();
+  Manager._newInstance();
 }
 
-class Children extends Manager{
-
-}
+// class Children extends Manager{
+//   Children.getInstance() : super.getInstance();
+//
+// }
