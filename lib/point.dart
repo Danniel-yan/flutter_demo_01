@@ -19,6 +19,8 @@ class Point {
   // get set方法 不写 默认隐式
   int get xx => xx == 0 ? 10 : 3;
   set xx(int x) => _x = x;
+
+
 }
 
 // 类的定义如果使用下划线 也意味着是私有类 外部无法调用
