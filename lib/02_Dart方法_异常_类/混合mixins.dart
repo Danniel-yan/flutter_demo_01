@@ -21,7 +21,7 @@ class C with F,E{
 //如何C類不需要自己本身的方法 則可以直接省略成以下方法
 // class C = Object with F,E;
 
-class M implements E,F{
+class M implements E,F  {
   @override
   void e() {
     // TODO: implement e
@@ -33,8 +33,6 @@ class M implements E,F{
   }
 
 }
-
-
 
 void main() {
   var mC = C();
