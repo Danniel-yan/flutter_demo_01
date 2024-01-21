@@ -1,4 +1,6 @@
-// isolate机制 像进程一样的线程 属于内存隔离；java中线程是内存共享的，iso属于内存隔离
+// isolate机制 像进程一样的线程 属于内存隔离；java中线程是内存共享的，iso属于内存隔离;完成并发操作。
+// Isolate 的工作原理是通过使用 Dart 的隔离机制来实现的。每个 Isolate 都运行在独立的隔离环境中，并且与其他
+// Isolate 共享代码的副本。这意味着Isolate之间不能直接共享数据，而必须使用消息传递机制来进行通信。
 import 'dart:io';
 import 'dart:isolate';
 
