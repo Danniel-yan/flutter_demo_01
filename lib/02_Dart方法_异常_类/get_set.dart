@@ -1,5 +1,5 @@
 
-import '../point.dart';
+import 'point.dart';
 
 class Point{
   var x = 0;

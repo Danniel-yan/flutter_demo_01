@@ -1,4 +1,4 @@
-import 'package:flutter_demo_01/point.dart';
+import 'package:flutter_demo_01/02_Dart%E6%96%B9%E6%B3%95_%E5%BC%82%E5%B8%B8_%E7%B1%BB/point.dart';
 
 class View{
   View(int context, int attr);
