@@ -58,7 +58,7 @@ class _MyApp2State extends State<MyApp2> {
 
   ///初始化时，在initState()之后立刻调用
   ///当依赖的InheritedWidget rebuild,会触发此接口被调用
-@override
+  @override
   void didChangeDependencies() {
     // TODO: implement didChangeDependencies
     super.didChangeDependencies();
@@ -70,7 +70,7 @@ class _MyApp2State extends State<MyApp2> {
     debugPrint("build");
     return MaterialApp(home: Scaffold(
       appBar: AppBar(title: Text("哈哈", style: const TextStyle(color: Colors.white)),
-      backgroundColor: Colors.blue),
+          backgroundColor: Colors.blue),
       body: Center(child:  Text(data??"")),
     ));
   }
